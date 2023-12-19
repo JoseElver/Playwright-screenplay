@@ -1,0 +1,26 @@
+{
+  "name": "playwright_piloto_screenplay",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "pretest": "npx ts-node src/helper/report/init.ts",
+    "test": "cross-env ENV=prod FORCE_COLOR=0 cucumber-js --config=config/cucumber.js || true",
+    "posttest": "npx ts-node src/helper/report/report.ts",
+    "test:failed": "cucumber-js -p rerun @rerun.txt"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@cucumber/cucumber": "^10.0.1",
+    "@playwright/test": "^1.40.1",
+    "@types/node": "^20.10.4",
+    "cross-env": "^7.0.3",
+    "dotenv": "^16.3.1",
+    "fs-extra": "^11.2.0",
+    "multiple-cucumber-html-reporter": "^3.5.0",
+    "ts-node": "^10.9.2",
+    "winston": "^3.11.0"
+  }
+}

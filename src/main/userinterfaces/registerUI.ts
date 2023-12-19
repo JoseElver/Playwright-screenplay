@@ -1,0 +1,11 @@
+export const TXT_FIRSTNAME = "input[formcontrolname='firstname']";
+export const TXT_LASTNAME = "input[formcontrolname='lastname']";
+export const TXT_USERNAME = "input[formcontrolname='username']";
+export const TXT_PASSWORD = "input[formcontrolname='password']";
+export const TXT_CONFIRM_PASSWORD = "input[formcontrolname='confirmPassword']";
+export const INP_MALE = "input[value='Male']";
+export const INP_FEMALE = "input[value='Female']";
+export const RADIOBTN_MALE = "//span[contains(text(),'Male')]";
+export const RADIOBTN_FEMALE = "//span[contains(text(),'Female')]";
+export const BTN_REGISTER = "//span[contains(text(),'Register')]";
+export const TXT_VALIDATE_REGISTER = "//span[contains(text(),'Register')]";
